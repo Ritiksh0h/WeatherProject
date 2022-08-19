@@ -16,8 +16,14 @@ app.use('/css', express.static(path.resolve(__dirname, "public/css")))
 app.use('/img', express.static(path.resolve(__dirname, "public/img")))
 
 
+// for cp year 
+var d = new Date();
+var year = d.getFullYear();
+
 app.get('/', function(req, res){
-    res.render("index");
+    res.render("index",{
+        year: year
+    });
 });
 
 app.post('/', function(req, res){
@@ -50,7 +56,8 @@ app.post('/', function(req, res){
                 img: imageUrl,
                 max: maxTemp,
                 min: minTemp,
-                weatherDescription: weatherDescription
+                weatherDescription: weatherDescription,
+                year: year
             })
 
             // res.write("<h1>"+ placeName +"</h1>");
