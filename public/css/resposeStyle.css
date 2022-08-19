@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    background-color: #EDEDED;
+    color: #EDEDED;
+}
+#container{
+    width: 425px;
+    height: 425px;
+    margin: 7% auto;
+    background-color: #222831;
+    border-radius: 9px;
+}
+#container h1,#container h3,#container .max-temp,#container .mini-temp{
+    margin:0 5%;
+    text-align: left;
+    font-weight: bold;
+}
+#container h1{
+    font-size: 3.5rem;
+    letter-spacing: 8px;
+}
+#container h3{
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+#container .max-temp,#container .mini-temp{
+    padding-right: 10%;
+    display: inline-block;
+}
+#container .weather-dis{
+    margin:3% 5% 0;
+    text-align: left;
+    font-weight: bold;
+}
+#container img{
+    width: 30%;
+    height: 30%;
+    margin:1% 33%;
+}
