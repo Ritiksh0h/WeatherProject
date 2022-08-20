@@ -59,13 +59,6 @@ app.post('/', function(req, res){
                 weatherDescription: weatherDescription,
                 year: year
             })
-
-            // res.write("<h1>"+ placeName +"</h1>");
-            // res.write("<h3>the temperature is " + temp + " degree Celcius</h3>"); 
-            // res.write("<img src=" + imageUrl + ">")
-            // res.write("<p>Max Temp:<br>" + maxTemp +  "</p>")
-            // res.write("<p>Mini Temp:<br>"+ minTemp +"</p>")
-            // res.write("<p>Weather Discription:<br>" +    weatherDescription + "</p>")
             res.send();
         });
     });
